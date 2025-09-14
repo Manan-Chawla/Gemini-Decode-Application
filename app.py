@@ -5,6 +5,9 @@ import streamlit as st
 import base64
 import google.generativeai as genai
 
+
+# this is just for testing 
+
 # Load environment variables from the .env file
 load_dotenv()  # loading the environment variables
 api_key = os.getenv("GOOGLE_API_KEY")
@@ -68,3 +71,4 @@ if submit and image is not None:
     response = get_response(input_prompt, image)  # Pass input_prompt and image
     st.subheader("Bot Response:")
     st.write(response)
+
